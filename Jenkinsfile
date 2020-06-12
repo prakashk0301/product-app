@@ -14,5 +14,23 @@ pipeline {
 				
 			}
 		}
+	    
+//	    //     stage("Deploy To Kuberates Cluster"){
+//        kubernetesDeploy(
+//         configs: 'springBootMongo.yml', 
+//         kubeconfigId: 'KUBERNETES_CLUSTER_CONFIG',
+//         enableConfigSubstitution: true
+//        )
+//     }
+//	 
+//	  /**
+ //     stage("Deploy To Kuberates Cluster"){
+ //       sh 'kubectl delete rc production-app-k8s'
+ //       sh 'kubectl apply -f production-app-k8s-manifestfile.yml'
+ //     } **/
+ //    
+}
+	    
+	    
 	}
 }
